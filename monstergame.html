@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1 class="header">Monster Game</h1>
+    <div class="top_panel">
+        <div class="health_bar">
+            <pre style="color: blueviolet;">Monster</pre>
+            <div id="monster_health_bar" class="health_bar_monster">
+                <pre id="monster_health">100%</pre>
+            </div>
+        </div>
+        <div class="health_bar">
+            <pre id="player" style="color: blueviolet;">Player<i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i></pre>
+            <div id="player_health_bar" class="health_bar_player">
+                <pre id="player_health">100%</pre>
+            </div>
+        </div>
+    </div>
+    <div id="log_panel" class="log_panel">
+        
+    </div>
+    <div class="btn_panel">
+        <button id="attack_btn" class="gamebtn">Attack</button>
+        <button id="huge_attack_btn" class="gamebtn">Huge Attack</button>
+        <button id="heal_btn" class="gamebtn">Heal</button>
+        <button id="restart_btn" class="gamebtn">Restart</button>
+    </div>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/monstergame.js"></script>
+</body>
+</html>

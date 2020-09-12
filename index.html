@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn JS</title>
-    <script src="assets/scripts/event.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main.css"/>  
 </head>
 <body>
-    <h1>Learning Js</h1>
-    <button onclick="action()">Learn JS</button>
+    <h1 class="header">Calculator</h1>
+    <div>
+        <div class="box">
+            <input type="number" id="inputbox" class="textbox"/>
+            <br>
+            <button class="btn" onclick="handleCalculate(event)" value="+">+</button>
+            <button class="btn" onclick="handleCalculate(event)" value="-">-</button>
+            <button class="btn" onclick="handleCalculate(event)" value="*">*</button>
+            <button class="btn" onclick="handleCalculate(event)" value="/">/</button>
+            <button class="btn" onclick="handleCalculate(event)" value="=">=</button>
+            <button class="btn" onclick="handleCalculate(event)" value="C">C</button>
+        </div>
+        <div class="box">
+            <div id="currentCalculation" class="result"></div>
+            Result :<div id="currentResult" class="result">0</div>
+        </div>
+
+        <hr>
+
+        <h2 class="header">Testing ++ operator for the number 5</h2>
+        <button id="preAdd" class="btn">++5</button>
+        <button id="postAdd" class="btn">5++</button>
+        <pre>
+            <ul>
+                <li>++5 returns 6 (which is the value after increment) while ++5 returns 5 (which is the value before increment). </li>
+                <li>You can only use the increment and decrement operators on variables or object properties.</li>
+                <li>++5 is invalid, ++SOME_DEFAULT_VALUE is valid</li>
+            </ul>
+        </pre>
+        <hr>
+
+
+    </div>
+
+    <script src="assets/scripts/calculator.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
 </body>
 </html>

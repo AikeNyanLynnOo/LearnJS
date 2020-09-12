@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    width : 100%;
+    padding-top : 1em;
+    padding-bottom : 1em;
+    background-color: blueviolet;
+    color : #fff;
+    text-align: center;
+    margin-bottom : 2em;
+}
+.box {
+    width : 30%;
+    margin : auto;
+    height: auto;
+    text-align: center;
+    border : 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding : 20px;
+}
+.textbox {
+    border : 1px solid black;
+    border-radius: 2px;
+    height : 30px;
+    width: 150px;
+    font-size: x-large;
+    color: blueviolet;
+    margin-bottom : 20px;
+}
+.btn {
+    border-radius: 2px;
+    width : 50px;
+    height : 30px;
+    background-color: blueviolet;
+    font-size: x-large;
+    color : #fff;
+}
+.result {
+    color : blueviolet;
+    font-size: x-large;
+}
+
+
+/* monstergame */
+
+.top_panel{
+    width : 80%;
+    margin : auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.health_bar{
+    width : 50%;
+    text-align: center;
+    margin : 1em;
+    font-size: x-large;
+    color:#fff;
+}
+.health_bar_monster{
+    background-color: blueviolet;
+}
+.health_bar_player{
+    background-color: blueviolet;
+}
+.log_panel{
+    width: 70%;
+    margin : auto;
+    font-size : large;
+    height: 300px;
+    border : 1px solid black;
+    border-radius: 1px;
+    padding : 1px;
+    background-color: bisque; 
+    overflow-y: scroll;
+}
+.btn_panel{
+    width : 80%;
+    margin : auto;
+    display: flex;
+    flex-direction: row;
+}
+.gamebtn{
+    border-radius: 2px;
+    width : 25%;
+    margin : 1em;
+    padding : 1em ;
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: large;
+    color : #fff;
+}
