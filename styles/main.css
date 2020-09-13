@@ -58,12 +58,15 @@ body {
     margin : 1em;
     font-size: x-large;
     color:#fff;
+    
 }
 .health_bar_monster{
     background-color: blueviolet;
+    transition: all 0.3s ease-out;
 }
 .health_bar_player{
     background-color: blueviolet;
+    transition: all 0.3s ease-out;
 }
 .log_panel{
     width: 70%;
