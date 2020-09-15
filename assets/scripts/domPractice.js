@@ -21,8 +21,6 @@
 // replaceChild() // replaceWith()
 // removeChild()
 
-let MOVIE_ID = 0
-
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -55,9 +53,6 @@ const generateImg = (url) => {
     img.className = "list-logo"
     return img
 }
-const generateStars = (rating) => {
-    
-}
 const generateContent = (name,rating) => {
     const listItem = document.createElement("div")
     listItem.className = "list-item-content"
@@ -87,6 +82,20 @@ const afterAddItem = () => {
 const afterDeleteItem = () => {
     list.childElementCount == 0 ? showDefault() : false;
 }
+function is_url(str)
+{
+  regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
+        if (regexp.test(str))
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+}
+
+
 add.addEventListener('click',()=>{
     const li = document.createElement("li")
     li.className = "list-content"
@@ -95,17 +104,25 @@ add.addEventListener('click',()=>{
         afterDeleteItem()
     }
     const name = document.getElementById('movie_name').value
-    const url = document.getElementById("movie_url").value
-    const rating = parseInt(document.getElementById('movie_rating').value)
+    const url = is_url(document.getElementById("movie_url").value) ? document.getElementById("movie_url").value : false ;
+    const ratingCheck = parseInt(document.getElementById('movie_rating').value)
 
-    const img = generateImg(url)
-    const content = generateContent(name,rating)
+    if(!(ratingCheck <= 5 && ratingCheck > 0)){
+        alert("Please rate between 1 to 5")
+        
+    }else if(url === false){
+        alert("Please enter a valid image url")
+    }else {
+        const rating = ratingCheck
+        const img = generateImg(url)
+        const content = generateContent(name,rating)
     
-    li.appendChild(img)
-    li.appendChild(content)
-    list.appendChild(li)
-    afterAddItem()
-    MOVIE_ID++
+        li.appendChild(img)
+        li.appendChild(content)
+        list.appendChild(li)
+        afterAddItem()
+    }
+    
 })
 
 

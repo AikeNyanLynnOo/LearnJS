@@ -32,6 +32,8 @@ const noData = document.getElementById("noData")
 const list = document.getElementById("list")
 const modal = document.getElementById("myModal")
 const span = document.getElementsByClassName("close")[0];
+
 const cancel = document.getElementById("cancel")
 const add = document.getElementById("add")
+
 

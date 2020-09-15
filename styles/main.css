@@ -134,10 +134,10 @@ body {
 }
 
 .list-logo {
-  width: 40%;
+  width: 30%;
 }
 .list-item-content {
-  width: 60%;
+  width: 70%;
   padding: 10px;
 }
 
@@ -243,8 +243,20 @@ body {
   color : #fff;
   font-family: "Montserrat", sans-serif;
 }
+.cancel-delete {
+  background-color: turquoise;
+  padding : 10px;
+  color : #fff;
+  font-family: "Montserrat", sans-serif;
+}
 .add {
   background-color: gold;
+  padding : 10px;
+  color : #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.confirm-delete {
+  background-color: tomato;
   padding : 10px;
   color : #fff;
   font-family: "Montserrat", sans-serif;

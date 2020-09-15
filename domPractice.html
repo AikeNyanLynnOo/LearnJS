@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Practice</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="nav-bar">
-        <h1 class="nav-title">Movie App</h1>
-        <button id="addMovie" class="nav-btn-right">Add Movie</button>
+      <h1 class="nav-title">Movie App</h1>
+      <button id="addMovie" class="nav-btn-right">Add Movie</button>
     </div>
-    <div id="noData" style="width:50%; margin:auto; text-align: center;">
-        <h3>No Data in database !!!</h3>
+    <div id="noData" style="width: 50%; margin: auto; text-align: center">
+      <h3>No Data in database !!!</h3>
     </div>
-    <ul id="list" class="list">
-        
-    </ul>
+    <ul id="list" class="list"></ul>
     <div id="myModal" class="modal">
-    <div class="modal-content">
+      <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
           <h2>Fill Movie Information</h2>
         </div>
         <div id="form-movie" class="modal-body">
           <label for="movie_name">Movie Name</label>
-          <input type="text" name="movie_name" id="movie_name" class="form-input"/>
+          <input
+            type="text"
+            name="movie_name"
+            id="movie_name"
+            class="form-input"
+          />
           <label for="movie_url">Movie Logo URL</label>
-          <input type="text" name="movie_url" id="movie_url" class="form-input"/>
+          <input
+            type="text"
+            name="movie_url"
+            id="movie_url"
+            class="form-input"
+          />
           <label for="movie_rating">Your rating between 1 to 5</label>
-          <input type="number" name="movie_rating" id="movie_rating" class="form-input" max="5"/>
+          <input
+            type="number"
+            name="movie_rating"
+            id="movie_rating"
+            class="form-input"
+            max="5"
+          />
         </div>
         <div class="modal-footer">
-            <div class="btn-group">
-                <button id="cancel" class="cancel">Cancel</button>
-                <button id="add" class="add" type="submit">Add</button>
-            </div>
+          <div class="btn-group">
+            <button id="cancel" class="cancel">Cancel</button>
+            <button id="add" class="add">Add</button>
           </div>
+        </div>
       </div>
-    </div>  
+    </div>
     <script src="assets/scripts/vendor.js"></script>
     <script src="assets/scripts/domPractice.js"></script>
-</body>
+  </body>
 </html>
