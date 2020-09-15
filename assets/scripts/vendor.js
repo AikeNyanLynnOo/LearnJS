@@ -17,8 +17,21 @@ const player_bar = document.getElementById("player_health_bar")
 const player_life = document.getElementById("player")
 const log_panel = document.getElementById("log_panel")
 
-let monsterHealth = parseInt(document.getElementById("monster_health").innerHTML)
-let playerHealth = parseInt(document.getElementById("player_health").innerHTML)
+const mm = document.getElementById("monster_health")
+const pp = document.getElementById("player_health")
+let monsterHealth = mm && parseInt(mm.innerHTML)
+let playerHealth = pp && parseInt(pp.innerHTML)
 
 const monster = document.getElementById("monster_health")
 const player = document.getElementById("player_health")
+
+// domPractice
+
+const btnAddMovie = document.getElementById('addMovie')
+const noData = document.getElementById("noData")
+const list = document.getElementById("list")
+const modal = document.getElementById("myModal")
+const span = document.getElementsByClassName("close")[0];
+const cancel = document.getElementById("cancel")
+const add = document.getElementById("add")
+
