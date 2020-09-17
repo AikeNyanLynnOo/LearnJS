@@ -21,6 +21,9 @@
 // replaceChild() // replaceWith()
 // removeChild()
 
+// CLONING NODE //
+// node.cloneNode(deep) - deep = true - all sub tree nodes / false - exclude sub tree
+
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";

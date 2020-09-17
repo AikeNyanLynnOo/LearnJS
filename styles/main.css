@@ -20,6 +20,16 @@ body {
   margin-bottom: 2em;
   padding: 20px;
 }
+.box-long {
+  width: 70%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  padding: 20px;
+}
 .textbox {
   border: 1px solid black;
   border-radius: 2px;
@@ -260,4 +270,39 @@ body {
   padding : 10px;
   color : #fff;
   font-family: "Montserrat", sans-serif;
+}
+.more-info{
+  overflow-y: scroll;
+  height : 200px;
+}
+.row,.rowlist {
+  display: flex;
+  flex-direction: row;
+  margin : 20px 10px;
+  font : medium "Montserrat", sans-serif;
+}
+.rowlist span {
+  width : 30%;
+  height : 25px;
+}
+.row input[type="text"] {
+  width : 35%;
+  height : 25px;
+}
+.row label{
+  width : 25%;
+}
+.mov-name{
+  display : flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  font : large "Montserrat", sans-serif;
+}
+.mov-name input{
+  width: 100%;
+  height : 35px;  
+  margin-right : 10px;
+}
+.btn-medium {
+  width : 150px;
 }
