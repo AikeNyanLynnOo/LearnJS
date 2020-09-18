@@ -47,3 +47,21 @@ for(const i of [1,2,3]){
     console.log(dynamicObj[i]);
 }
 
+// Object.assign(target,source) - copying and assigning objects - returns the target object
+
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget);
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+// check property existance
+if(!('key' in target)){ // or if(target.key === undefined)
+  // do something if property does not exist
+}
+
