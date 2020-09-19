@@ -306,3 +306,32 @@ body {
 .btn-medium {
   width : 150px;
 }
+
+/* Class Practice */
+
+.product-list{
+  width : 60%;
+  margin : auto;
+  padding : 0; /* to remove the empty horizontal space for empty bullet */
+  list-style-type: none;
+  text-align: center;
+}
+.product-list img{
+  height : 200px;
+}
+.product-item{
+  text-align: center;
+  margin-top : 20px;
+}
+.cart{
+  width : 60%;
+  margin : auto;
+  display: flex;
+  flex-direction: row;
+  border-radius : 5px;
+  border : 1px solid turquoise;
+}
+.cart pre{
+  font-size: large;
+  width : 90%;
+}
