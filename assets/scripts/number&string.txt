@@ -1,0 +1,123 @@
+0.2 + 0.4
+0.6000000000000001
+
+0.2 + 0.4 === 0.6
+false
+
+0.2 + 0.4 === 0.6000000000000001
+true
+
+(1).toString(2)
+"1"
+
+(5).toString(2)
+"101"
+
+(1/5).toString(2)
+"0.001100110011001100110011001100110011001100110011001101"
+
+0.2.toString(2)
+"0.001100110011001100110011001100110011001100110011001101"
+
+1/3 + 1/3 + 1/3
+1
+
+0.3333 + 0.3333 + 0.3333
+0.9999
+
+0.2.toFixed(20)
+"0.20000000000000001110"
+
++(0.2 + 0.4).toFixed(1) === 0.6
+true
+
+parseFloat((0.2 + 0.4).toFixed(1)) === 0.6
+true
+
+Number.MAX_SAFE_INTEGER
+9007199254740991
+
+Number.MAX_SAFE_INTEGER+2933812
+9007199257674804
+
+90071992576748049234823984n
+90071992576748049234823984n
+
+10n + 15n
+25n
+
+10n-4n
+6n
+
+10n+5
+VM1303:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:4
+(anonymous) @ VM1303:1
+
+10-4n
+VM1322:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:3
+(anonymous) @ VM1322:1
+
+parseInt(10n)-4
+6
+
+10n-BigInt(4)
+6n
+
+parseFloat(10n)
+10
+
+10.5n
+VM1465:1 Uncaught SyntaxError: Invalid or unexpected token
+
+function randomIntBetween(min,max){
+    return Math.floor(Math.random()*(max-min+1)+mim); 
+}
+
+// Tagged Templates
+
+function productDescription(strings, productName, productPrice) {
+  console.log(strings);
+  console.log(productName);
+  console.log(productPrice);
+  let priceCategory = 'pretty cheap regarding its price';
+  if (productPrice > 20) {
+    priceCategory = 'fairly priced';
+  }
+  return `${strings[0]}${productName}${strings[1]}${priceCategory}${
+    strings[2]
+  }`;
+  // return {name: productName, price: productPrice};
+}
+
+const prodName = 'JavaScript Course';
+const prodPrice = 29.99;
+
+const productOutput = productDescription`This product (${prodName}) is ${prodPrice}.`;
+console.log(productOutput);
+
+// regular expression
+
+const email = "testtestgmail.com";
+console.log(email.includes("@")); // false
+
+// ^ is start
+// $ is end
+// \S+ is any string
+// \. inside the expression is normal dot character which is escaped 
+// . in front of the expression means every string can be possible
+
+const reg = /^\S+@\S+\.\S+$/
+reg.test(email); // false
+reg.test("test@gmail.com"); // true
+
+const reg1 = /hello/
+reg1.test("hello my name is blah blah"); // true
+reg1.test("Hello"); // false
+
+const reg2 = /(h|H)ello/
+reg2.test("Hello"); // true
+
+const reg3 = /.ello/
+reg3.test("asdjfksaj ello"); // true
