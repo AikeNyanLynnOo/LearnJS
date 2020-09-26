@@ -248,22 +248,33 @@ body {
   margin-top: 20px;
 }
 .cancel {
+  cursor: pointer;
   background-color: deeppink;
   padding: 10px;
   color: #fff;
+  border : 1px solid deeppink;
   font-family: "Montserrat", sans-serif;
 }
+.cancel:focus{
+  outline: none;
+}
 .cancel-delete {
+  cursor: pointer;
   background-color: turquoise;
   padding: 10px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 .add {
+  cursor: pointer;
   background-color: gold;
   padding: 10px;
-  color: #fff;
+  color: #000;
+  border: 1px solid gold;
   font-family: "Montserrat", sans-serif;
+}
+.add:focus {
+  outline: none;
 }
 .confirm-delete {
   background-color: tomato;
@@ -342,4 +353,27 @@ body {
 }
 .dragged {
   background-color: cadetblue;
+}
+.box-long {
+  width: 70%;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.box-long > form > input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.box-long > form > input:focus {
+  outline: none;
+}
+
+.all-posts{
+  list-style-type: none;
+  padding: 0;
+}
+.all-posts>li>   {
+  width: 80%;
+  text-align: justify;
 }

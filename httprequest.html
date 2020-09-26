@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Http Request</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <template id="single-post">
+      <li>
+        <h2></h2>
+        <p></p>
+        <button>DELETE</button>
+      </li>
+    </template>
+    <div class="box-long">
+      <h2>What is in your mind?</h2>
+      <form>
+        <label for="post-title">Title</label>
+        <input type="text" name="title" id="post-title" />
+        <label for="post-content">Content</label>
+        <input type="text" name="body" id="post-content" />
+        <button id="save-post" class="add" type="submit">Post</button>
+      </form>
+    </div>
+    <div class="box-long">
+      <h2>All Posts</h2>
+      <button id="fetch-posts" class="add">Fetch Posts</button>
+      <hr />
+      <ul id="all-posts" class="all-posts"></ul>
+    </div>
+    <script src="assets/scripts/httprequest.js"></script>
+  </body>
+</html>
