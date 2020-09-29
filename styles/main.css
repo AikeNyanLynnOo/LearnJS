@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 .header {
   width: 100%;
@@ -9,6 +10,7 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 2em;
+  margin-top:0;
 }
 .box {
   width: 30%;
